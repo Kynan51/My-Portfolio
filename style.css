@@ -14,7 +14,7 @@ header {
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px; /* Adds a 6px gap below the header */
+  margin-bottom: 30px; 
 }
 
 header h1 {
@@ -92,7 +92,7 @@ p {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 20px auto; /* Centers the image horizontally */
+  margin: 20px auto; 
   border: 4px solid #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -101,10 +101,10 @@ p {
 footer {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(90deg, #2575fc, #6a11cb); /* Inverted gradient */
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
   color: #fff;
-  border-top: 4px solid #fff; /* White border to match the inverted style */
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow above the footer */
+  border-top: 4px solid #fff; 
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
@@ -117,8 +117,8 @@ footer img {
   width: 75px;
   height: 75px;
   object-fit: cover;
-  vertical-align: middle; /* Aligns the image with the text */
-  filter: invert(1); /* Inverts the colors of the SVG */
+  vertical-align: middle;
+  filter: invert(1); 
 }
 
 /* Responsive Design */
