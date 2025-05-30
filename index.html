@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kenan's | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./public/3s1Wug01.svg" type="image/svg+xml" />
 </head>
 <body>
   <header>
@@ -20,7 +21,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I'm Kenan Kiplimo, a Computer Science student at Mount Kenya University with a passion for data science. I specialize in data annotation using tools like CVAT for computer vision projects. I've worked with Node.js (from a short course at Eldohub), Express.js, JavaScript, PHP, HTML, and CSS for web development. Currently, I'm expanding my knowledge in AI and Microsoft Certified Professional (MCP) server technologies, focusing on server management.</p>
+    <p>Hi! I'm Kenan Kiplimo, a Computer Science student at Mount Kenya University with a passion for data science. I specialize in data annotation using tools like CVAT for computer vision projects. I've worked with Node.js (from a short course at Eldohub), Express.js, JavaScript, PHP, HTML, and CSS for web development. Currently, I'm expanding my knowledge in AI and Model Context Protocol (MCP) server technologies, focusing on server management.</p>
   </section>
 
   <section id="projects">
@@ -29,14 +30,44 @@
       <div class="project">
         <h3>Family Tree Maker</h3>
         <p>An app for creating and rendering family trees. Currently a work in progress, it allows users to visualize their family structure.</p>
-        <a href="https://github.com/Kynan51/Family-Tree-Maker" target="_blank">View on GitHub</a>
+        <div class="project-links">
+          <a href="https://github.com/Kynan51/Family-Tree-Maker" target="_blank">View on GitHub</a>
+          <a href="https://Family-Tree-Maker-seven.vercel.app" target="_blank">Click to view</a>
+        </div>
+          <img src="./public/family-tree-screenshot.png" alt="Family Tree Maker Screenshot" />
+          <img src="./public/demo-family-tree.png" alt=" Demo family tree Screenshot" />        
       </div>
+
+      <div class="project">
+        <h3>BejeweledByJoy</h3>
+        <p>A Jewelry e-commerce platform showcasing unique, handcrafted pieces. </p>
+        <div class="project-links">
+          <a href="https://github.com/Kynan51/BejeweledByJoy" target="_blank">View on GitHub</a>
+          <a href="https://bejeweled-by-joy.vercel.app/" target="_blank">Click to view</a>
+        </div>
+          <img src="./public/bejeweled-by-joy.png" alt="BejeweledByJoy Screenshot" />
+      </div>
+
       <div class="project">
         <h3>Land Marketplace</h3>
         <p>A platform for buying and selling land. Built with modern web technologies to connect buyers and sellers seamlessly.</p>
-        <a href="https://github.com/Kynan51/Land-Marketplace" target="_blank">View on GitHub</a>
+        <div class="project-links">
+          <a href="https://github.com/Kynan51/Land-Marketplace" target="_blank">View on GitHub</a>
+          <!-- <a href="https://Land-Marketplace-eight.vercel.app" target="_blank">Click to view</a> -->
+        </div>
+        <!-- <a href="https://Land-Marketplace-eight.vercel.app" target="_blank">
+          <img src="./public/land-marketplace-screenshot.png" alt="Land Marketplace Screenshot" />
+        </a> -->
+        
       </div>
     </div>
+
+    <div id="img-modal" class="img-modal">
+      <span class="img-modal-close" id="img-modal-close">&times;</span>
+      <img class="img-modal-content" id="img-modal-img" />
+      <div id="img-modal-caption"></div>
+    </div>
+
   </section>
 
   <section id="contact">
@@ -48,6 +79,15 @@
     
     <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p> -->
   </section>
+
+  <!-- scroll-to-top button -->
+  <button id="scroll-to-top" title="Go to top">
+    <svg width="32" height="32" viewBox="0 0 512 512" fill="none">
+    <path d="M256 112L256 400" stroke="white" stroke-width="32" stroke-linecap="round"/>
+    <path d="M400 256L256 112L112 256" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  </button>
+
 
   <footer>
     <p> <img src="./public/3s1Wug01.svg"> Primal Code &copy; 2025 </p>
