@@ -394,3 +394,31 @@ footer img {
     font-size: 0.7rem;
   }
 }
+
+/* Download PDF Button */
+.pdf-button {
+  background-color: #144eb3;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-button:hover {
+  background-color: #2575fc;
+  color: #fff;
+
+}
+
+.pdf-button:active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
