@@ -10,18 +10,25 @@
 <body>
   <header>
     <h1>Kenan Kiplimo</h1>
-    <nav>
+    <button class="hamburger" id="hamburger-btn" aria-label="Open navigation" >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="main-nav">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#activities">Activities</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- <img src="./public/3s1Wug01.svg" alt="Profile Photo" class="profile-photo" /> -->
-
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I'm Kenan Kiplimo, a Computer Science student at Mount Kenya University with a passion for data science. I specialize in web design, web development, and data annotation using tools like CVAT for computer vision projects. I've worked with Node.js (from a short course at Eldohub), Express.js, JavaScript, PHP, HTML, and CSS for web development. Currently, I'm expanding my knowledge in AI and Model Context Protocol (MCP) server technologies, focusing on server management.</p>
+    <p>Self-motivated and versatile Computer Science student with a strong foundation in web development, and data annotation. Known for clear communication and attention to detail. Experienced in collaborative and remote-first environments with a passion for continuous learning and problem-solving. Open to opportunities in tech, data, research, digital governance, and other innovation-driven roles.</p>
   </section>
 
   <section id="projects">
@@ -34,18 +41,18 @@
           <a href="https://github.com/Kynan51/Family-Tree-Maker" target="_blank">View on GitHub</a>
           <a href="https://Family-Tree-Maker-seven.vercel.app" target="_blank">Click to view</a>
         </div>
-          <img src="./public/family-tree-screenshot.png" alt="Family Tree Maker Screenshot" />
-          <img src="./public/demo-family-tree.png" alt=" Demo family tree Screenshot" />        
+        <img src="./public/family-tree-screenshot.png" alt="Family Tree Maker Screenshot" />
+        <img src="./public/demo-family-tree.png" alt="Demo family tree Screenshot" />
       </div>
 
       <div class="project">
         <h3>BejeweledByJoy</h3>
-        <p>A Jewelry e-commerce platform showcasing unique, handcrafted pieces. </p>
+        <p>A Jewelry e-commerce platform showcasing unique, handcrafted pieces.</p>
         <div class="project-links">
           <a href="https://github.com/Kynan51/BejeweledByJoy" target="_blank">View on GitHub</a>
           <a href="https://bejeweled-by-joy.vercel.app/" target="_blank">Click to view</a>
         </div>
-          <img src="./public/bejeweled-by-joy.png" alt="BejeweledByJoy Screenshot" />
+        <img src="./public/bejeweled-by-joy.png" alt="BejeweledByJoy Screenshot" />
       </div>
 
       <div class="project">
@@ -53,44 +60,66 @@
         <p>A platform for buying and selling land. Built with modern web technologies to connect buyers and sellers seamlessly.</p>
         <div class="project-links">
           <a href="https://github.com/Kynan51/Land-Marketplace" target="_blank">View on GitHub</a>
-          <!-- <a href="https://Land-Marketplace-eight.vercel.app" target="_blank">Click to view</a> -->
         </div>
-        <!-- <a href="https://Land-Marketplace-eight.vercel.app" target="_blank">
-          <img src="./public/land-marketplace-screenshot.png" alt="Land Marketplace Screenshot" />
-        </a> -->
-        
       </div>
     </div>
+  </section>
 
-    <div id="img-modal" class="img-modal">
-      <span class="img-modal-close" id="img-modal-close">&times;</span>
-      <img class="img-modal-content" id="img-modal-img" />
-      <div id="img-modal-caption"></div>
-    </div>
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li><strong>Data Annotator — Fuzu (Remote)</strong> | April 2025 – Present<br />
+      Annotated visual and text-based datasets for AI model training. Maintained high accuracy and met strict deadlines.</li>
 
+      <li><strong>Data Annotator — CVAT.ai (Remote)</strong> | March 2024 – Present<br />
+      Labeled computer vision datasets using CVAT. Conducted QA reviews and collaborated with international teams.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BSc. Computer Science</strong> — Mount Kenya University | 2025 – Present</li>
+      <li><strong>BSc. Computer Science</strong> — Moi University (Transferred) | 2023 – 2024</li>
+      <li><strong>Certificate in Full-Stack Software Development (Node.js)</strong> — Eldohub Academy | April 2024 – Sept 2024</li>
+      <li><strong>Kapsabet Boys High School</strong> | 2019 – 2022</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical & Soft Skills</h2>
+    <ul>
+      <li><strong>Languages & Tools:</strong> HTML, CSS, JavaScript, Node.js, PHP, Express.js, CVAT, SQL, Git</li>
+      <li><strong>Soft Skills:</strong> Critical Thinking, Communication, Time Management, Collaboration, Attention to Detail, Adaptability, Fast Learning, Problem-Solving</li>
+    </ul>
+  </section>
+
+  <section id="activities">
+    <h2>Activities & Memberships</h2>
+    <ul>
+      <li>Web Developer Lead — GDG Moi University (2024)</li>
+      <li>Member — GDG, ICT Club, Avalanche Crypto Connect (Mount Kenya University)</li>
+      <li>Interest in AI/ML and Data Science</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:kenankiplimo@gmail.com">kenankiplimo@gmail.com</a></p>
-
-    <p>Phone: <a href="tel:+254759840063">+254759840063</a></p>
-
-    
-    <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p> -->
+    <p><a href="mailto:kenankiplimo@gmail.com" style="text-decoration: none;">kenankiplimo@gmail.com</a>
+    | <a href="tel:+254759840063" style="text-decoration: none;">+254759840063</a></p>
+    <p><a href="https://www.linkedin.com/in/kenan-kiplimo-7173622b6" target="_blank"><img src="/public/reshot-icon-linkedin-G7YJ8FXBKT.svg" alt="" width="30" style="padding: 10px; color: black;"></a> 
+    <a href="https://github.com/Kynan51" target="_blank"><img src="/public/reshot-icon-github-NY46M9DGFU.svg" alt="" width="30"  style="padding: 10px;"></a></p>
   </section>
 
-  <!-- scroll-to-top button -->
-  <button id="scroll-to-top" title="Go to top">
+  <!-- <button id="scroll-to-top" title="Go to top">
     <svg width="32" height="32" viewBox="0 0 512 512" fill="none">
-    <path d="M256 112L256 400" stroke="white" stroke-width="32" stroke-linecap="round"/>
-    <path d="M400 256L256 112L112 256" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-  </button>
-
+      <path d="M256 112L256 400" stroke="white" stroke-width="32" stroke-linecap="round"/>
+      <path d="M400 256L256 112L112 256" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button> -->
 
   <footer>
-    <p> <img src="./public/3s1Wug01.svg"> Primal Code &copy; 2025 </p>
+    <p><img src="./public/3s1Wug01.svg" alt="Logo"> Primal Code &copy; 2025</p>
   </footer>
 
   <script src="script.js"></script>

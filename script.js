@@ -1,3 +1,23 @@
+// Hamburger menu logic
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger-btn');
+  const nav = document.getElementById('main-nav');
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', function () {
+      nav.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Optional: Close nav when a link is clicked (on mobile)
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+  }
+});
 // to be added: theme toggling 
 
 
@@ -16,25 +36,25 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
-// Scroll to top button logic
-document.addEventListener('DOMContentLoaded', function () {
-  const scrollToTopBtn = document.getElementById('scroll-to-top');
+// // Scroll to top button logic
+// document.addEventListener('DOMContentLoaded', function () {
+//   const scrollToTopBtn = document.getElementById('scroll-to-top');
   
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 300) {
-      scrollToTopBtn.style.display = 'block';
-    } else {
-      scrollToTopBtn.style.display = 'none';
-    }
-  });
+//   window.addEventListener('scroll', function () {
+//     if (window.scrollY > 300) {
+//       scrollToTopBtn.style.display = 'block';
+//     } else {
+//       scrollToTopBtn.style.display = 'none';
+//     }
+//   });
 
-  scrollToTopBtn.addEventListener('click', function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-})
+//   scrollToTopBtn.addEventListener('click', function () {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth'
+//     });
+//   });
+// })
 
 // Image modal logic
 document.addEventListener('DOMContentLoaded', function () {
